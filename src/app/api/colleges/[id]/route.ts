@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from "next/server"
 import { prisma } from "@/lib/prisma"
+
 export async function GET(
-  _: NextRequest,
-  { params }: { params: Promise<{ id: string }> }
+  request: NextRequest,
+  context: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { id } = await params
+    const { id } = await context.params
     const college = await prisma.college.findUnique({
       where: { id },
     })
