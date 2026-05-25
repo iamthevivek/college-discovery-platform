@@ -1,0 +1,5 @@
+DATABASE_URL="postgresql://neondb_owner:npg_ekwrihl1L3Cx@ep-autumn-dream-aovzwgrk.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require"
+NEXTAUTH_SECRET="mysecretkey123"
+NEXTAUTH_URL="http://localhost:3000"
+GOOGLE_CLIENT_ID="YOUR_CLIENT_ID"
+GOOGLE_CLIENT_SECRET="YOUR_CLIENT_SECRET"
