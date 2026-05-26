@@ -1,36 +1,210 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CollegeFinder 🎓
 
-## Getting Started
+A modern full stack college discovery platform built using Next.js, Prisma, PostgreSQL, and NextAuth. Users can explore colleges across India, search and filter institutions, save favorite colleges, and view detailed college information with placements, fees, ratings, and courses.
 
-First, run the development server:
+---
 
-```bash
+# 🚀 Live Demo
+
+https://college-discovery-platform-rho-five.vercel.app/
+
+---
+
+# ✨ Features
+
+- 🔍 Search colleges by name or city
+- 🏫 Filter colleges by category
+- ❤️ Save favorite colleges
+- 🔐 Google Authentication with NextAuth
+- 📄 Detailed college pages
+- 📊 Placement statistics
+- 💰 Fees and package information
+- 📱 Fully responsive modern UI
+- ⚡ Fast performance using Next.js 16
+- 🗄️ PostgreSQL database with Prisma ORM
+- ☁️ Deployed on Vercel
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+- Next.js 16
+- React 19
+- TypeScript
+- CSS
+
+## Backend
+- Next.js API Routes
+- Prisma ORM
+- PostgreSQL (Neon DB)
+
+## Authentication
+- NextAuth.js
+- Google OAuth
+
+## Deployment
+- Vercel
+
+---
+
+# 📂 Folder Structure
+
+college-discovery/
+│
+├── prisma/
+│   ├── schema.prisma
+│   └── seed.ts
+│
+├── public/
+│
+├── src/
+│   ├── app/
+│   │   ├── api/
+│   │   ├── colleges/
+│   │   ├── saved/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── globals.css
+│   │
+│   ├── components/
+│   │   ├── CollegeCard.tsx
+│   │   ├── Navbar.tsx
+│   │   └── SaveButton.tsx
+│   │
+│   └── lib/
+│       ├── auth.ts
+│       └── prisma.ts
+│
+├── .env
+├── package.json
+└── README.md
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+
+git clone https://github.com/iamthevivek/college-discovery-platform.git
+
+cd college-discovery-platform
+
+---
+
+## Install Dependencies
+
+npm install
+
+---
+
+# 🗄️ Database Setup
+
+## Push Prisma Schema
+
+npx prisma db push
+
+## Seed Database
+
+npx tsx prisma/seed.ts
+
+---
+
+# ▶️ Run Project
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# 🔐 Google OAuth Setup
 
-To learn more about Next.js, take a look at the following resources:
+## Localhost
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+http://localhost:3000/api/auth/callback/google
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Production
+
+https://college-discovery-platform-rho-five.vercel.app/api/auth/callback/google
+
+---
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Import GitHub repository into Vercel
+2. Add environment variables
+3. Deploy project
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# 🌍 Environment Variables for Vercel
+
+DATABASE_URL
+
+NEXTAUTH_SECRET
+
+NEXTAUTH_URL
+
+GOOGLE_CLIENT_ID
+
+GOOGLE_CLIENT_SECRET
+
+---
+
+# 📸 Features Included
+
+✅ College Search
+
+✅ Category Filters
+
+✅ College Detail Pages
+
+✅ Save Colleges
+
+✅ Google Login
+
+✅ Responsive Design
+
+✅ Prisma + PostgreSQL
+
+✅ Vercel Deployment
+
+---
+
+# 👨‍💻 Author
+
+Vivek Sarode
+
+GitHub:
+https://github.com/iamthevivek
+
+---
+
+# 📜 License
+
+This project is created for educational and portfolio purposes.
+
+---
+
+# ⭐ Future Improvements
+
+- College comparison system
+- AI recommendations
+- Reviews & ratings
+- Dark mode
+- Admin dashboard
+- Advanced filters
+
+---
+
+# 🙌 Acknowledgements
+
+- Next.js
+- Prisma
+- Neon PostgreSQL
+- NextAuth
+- Vercel
+- Google OAuth
