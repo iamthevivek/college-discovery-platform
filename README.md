@@ -120,18 +120,6 @@ http://localhost:3000
 
 ---
 
-# 🔐 Google OAuth Setup
-
-## Localhost
-
-http://localhost:3000/api/auth/callback/google
-
-## Production
-
-https://college-discovery-platform-rho-five.vercel.app/api/auth/callback/google
-
----
-
 ## Deploy on Vercel
 
 1. Import GitHub repository into Vercel
